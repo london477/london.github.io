@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>London 477</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 { color: #333; }
+    .box {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍔 London 477</h1>
+  <div class="box">
+    <p><strong>Durum:</strong> Sistem çalışıyor ✅</p>
+    <p>GitHub Pages yayında.</p>
+  </div>
+
+</body>
+</html>
