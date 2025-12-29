@@ -1,10 +1,18 @@
+<body>
+
+<h1>🍔 Sipariş Kontrol</h1>
+
+<div id="orderApp">Yükleniyor...</div>
+
 <script>
 const sheetJSON = "https://docs.google.com/spreadsheets/d/1FLj8izC6-I4VXukH1OT-Y6Tntf_8g1U35lOJHYi1Lfs/gviz/tq?tqx=out:json";
 
 fetch(sheetJSON)
   .then(res => res.text())
   .then(txt => {
-    const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}") + 1));
+    const json = JSON.parse(
+      txt.substring(txt.indexOf("{"), txt.lastIndexOf("}") + 1)
+    );
     const rows = json.table.rows;
 
     let html = "<h2>Siparişler</h2><ul>";
@@ -16,8 +24,10 @@ fetch(sheetJSON)
     document.getElementById("orderApp").innerHTML = html;
   })
   .catch(err => {
-    document.getElementById("orderApp").innerHTML = "Veri çekilemedi.";
+    document.getElementById("orderApp").innerHTML = "❌ Veri çekilemedi";
     console.error(err);
   });
 </script>
+
+</body>
 
