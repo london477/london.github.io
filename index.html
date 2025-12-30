@@ -75,7 +75,9 @@
         );
 
         const cols = json.table.cols;
-        const rows = json.table.rows;
+      const satirlar = json.table.rows.filter(r =>
+  r.c && r.c.length && r.c[0] && r.c[0].v);
+
 
         let html = "<table><tr>";
         cols.forEach(c => {
